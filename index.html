@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Folhas de estilo da página -->
+    <style>
+        /* Reset para padronizar estilos com alguns navegadores */
+        * {
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        /* Fonte padrão */
+        html, body {
+            font-family: sans-serif;
+            font-size: 16px;
+
+            /* O estilo acima define a unidade "rem", ou seja, 1rem = 16px */
+        }
+
+        /* Padronizar os links */
+        a {
+            color: steelblue;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: orangered
+        }
+
+
+
+        /* wrap - Container principal */
+        #wrap {
+            /* Define a largura máxima em pixels */
+            max-width: 1024px;
+            
+            /* Centraliza o bloco */
+            margin: auto;
+        }
+
+        /* Estiliza <header> */
+        #header {
+            background-color: #f02;
+            color: #011627;
+        }
+
+         #header h1 {
+            margin: 0;
+            
+        }
+
+        #header img {
+            height: 4rem;
+            width: auto;
+            border-radius: 50;
+        }
+
+
+        /* Estiliza menu principal */
+        #nav {
+            background-color: black;
+        }
+
+        /* Estiliza links do menu principal */
+        #nav a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        /* Quando o ponteiro do mouse estiver aqui */
+        #nav a:hover {
+            color: #41ead4;
+        }
+
+        /* main - Conteúdo principal da página */
+        main {
+            background-color: #FFEAB4
+
+            ;
+            padding: 10px;
+        }
+
+        /* Estilza rodapé */
+        #footer {
+            background-color: grey;
+            color: white;
+            
+        }
+
+        /* Ajusta título e o último parágrafo da página */
+        main>h2:first-child,
+        main>p:last-child {
+            margin: 0;
+            padding: .75rem 0;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Elemento principal do layout -->
+    <div id="wrap">
+
+        <!-- Cabeçalho com logo e nome do site -->
+         <header id="header">
+            <a href="index.html">
+                <img src="img/Untitled.png" alt="Logotipo de firstFront">
+                
+            </a>
+            <h1>FirstFront</h1>
+        </header>
+
+
+        <!-- Menu principal -->
+        <nav id="nav">
+            <a href="index.html">Início</a>
+            <a href="contacts.html">Contatos</a>
+            <a href="about.html">Sobre</a>
+        </nav>
+
+        <!-- Conteúdo -->
+        <main>
+            <h2>Título desta página</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, sint provident facilis sequi natus
+                asperiores distinctio! Debitis, saepe blanditiis voluptas nostrum ut quidem quas a quis quam aperiam
+                tempora facere?</p>
+                <h4>Links inúteis</h4>
+                <ul>
+                    <li><a href="https://google.com">Google</a></li>
+
+                </ul>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam impedit consequatur facilis omnis quo
+                dolores libero placeat non praesentium commodi obcaecati fuga rerum corrupti, nam tenetur qui nobis odit
+                dignissimos!</p>
+                
+            <div style="border: 1px dotted red;">Aqui</div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis tempora magni et provident rem
+                laudantium saepe, nihil a autem illum nemo, architecto numquam totam labore repellat, error placeat.
+                Ullam, eligendi?</p>
+        </main>
+
+        <!-- Rodapé -->
+        <footer id="footer">
+            &copy; 2026 N4than
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
