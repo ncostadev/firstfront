@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de FlexBox</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        /* Define estilos como variáveis */
+        :root {
+            --aside-md-width: 250px;
+            --boxes_bgcolor: rgb(190, 190, 190);
+        }
+
+        #divpai {
+            background-color: beige;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .divfilho {
+            background-color: var(--boxes_bgcolor);
+        }
+
+        .div1 {
+            flex-grow: 1;
+        }
+
+        .div2 {
+            /* flex-basis: 300px; */
+            width: 100%;
+        }
+
+        /* Responsividade com Media Queries */
+
+        /* Isso só se aplica a larguras de "PELO MENOS" 768 pixels */
+        @media screen and (min-width: 575px) {
+
+            #divpai {
+                flex-direction: row;
+            }
+
+            .div2 {
+                /* flex-basis: 300px; */
+
+                /* Aplicando a variável */
+                min-width: var(--aside-md-width);
+                max-width: var(--aside-md-width);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="divpai">
+
+        <div class="divfilho div1">
+            DIV1 Casa<br>Casaco
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt et temporibus atque quod id praesentium
+                quam neque laboriosam rem reiciendis, dolore eaque vitae iusto consectetur doloremque unde cupiditate
+                distinctio quisquam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt et temporibus atque quod id praesentium
+                quam neque laboriosam rem reiciendis, dolore eaque vitae iusto consectetur doloremque unde cupiditate
+                distinctio quisquam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt et temporibus atque quod id praesentium
+                quam neque laboriosam rem reiciendis, dolore eaque vitae iusto consectetur doloremque unde cupiditate
+                distinctio quisquam.</p>
+        </div>
+
+        <div class="divfilho div2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet cum pariatur accusantium numquam sapiente.
+            Eligendi non sunt deserunt explicabo? Voluptatibus culpa excepturi, exercitationem quisquam cum repudiandae
+            iusto esse doloremque adipisci.
+        </div>
+
+    </div>
+
+</body>
+
+</html>

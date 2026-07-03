@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Flexbox</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        #divpai {
+            background-color: beige;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .divfilho {
+            background-color: rgb(126, 138, 148);
+        }
+        /* Responsividade com Media Queries */
+        /* Isso só se aplica a largura de "PELO MENOS" 768 pixels */
+        @media screen and (min-width: 575px) {
+            
+            /* #divpai {
+            flex-direction: row;
+            } */
+        }
+   </style>
+</head>
+
+<body>
+   
+    <div id="divpai">
+
+        <div class = "divfilho">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eius sit beatae obcaecati 
+            nostrum praesentium. Earum debitis officia vel, aliquam error soluta 
+            possimus eligendi quae eaque? Veniam quaerat omnis labore!
+        </div>
+
+        <div class = "divfilho">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint maiores reiciendis labore tempora possimus rem harum in, molestias, odit laudantium aliquid delectus cumque neque? Voluptate architecto adipisci quibusdam soluta totam.
+        </div>
+
+        <div class = "divfilho">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint maiores reiciendis labore tempora possimus rem harum in, molestias, odit laudantium aliquid delectus cumque neque? Voluptate architecto adipisci quibusdam soluta totam.
+        </div>
+    
+    </div>
+
+</body>
+</html>
